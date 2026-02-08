@@ -1,0 +1,132 @@
+.results-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.results-card {
+  background: white;
+  border-radius: 15px;
+  padding: 50px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.results-card h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.score-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.score-circle.excellent {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.score-circle.good {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.score-circle.average {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.score-circle.poor {
+  background: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%);
+}
+
+.score-content {
+  color: white;
+}
+
+.score-value {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.score-percentage {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.score-message {
+  color: #333;
+  font-size: 1.5rem;
+  margin: 30px 0;
+}
+
+.score-details {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  gap: 20px;
+}
+
+.detail-item {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.detail-item.correct {
+  background: #d4edda;
+  border: 2px solid #28a745;
+}
+
+.detail-item.incorrect {
+  background: #f8d7da;
+  border: 2px solid #dc3545;
+}
+
+.detail-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.detail-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.restart-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.restart-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.restart-button:active {
+  transform: translateY(0);
+}

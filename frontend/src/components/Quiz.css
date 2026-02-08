@@ -1,0 +1,140 @@
+.quiz-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.quiz-header {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-header h1 {
+  color: #333;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s ease;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.nav-button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.prev-button {
+  background: #6c757d;
+  color: white;
+}
+
+.prev-button:hover:not(:disabled) {
+  background: #5a6268;
+}
+
+.next-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.next-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.submit-button {
+  background: #28a745;
+  color: white;
+  flex: 1;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.nav-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.error-message {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.error-message h2 {
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.warning-message {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  color: #856404;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}

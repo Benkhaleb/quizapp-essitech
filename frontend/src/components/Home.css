@@ -1,0 +1,60 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.home-card {
+  background: white;
+  border-radius: 15px;
+  padding: 50px;
+  max-width: 600px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.home-card h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home-card p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.info-text {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  margin: 20px 0;
+}
+
+.start-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.start-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.start-button:active {
+  transform: translateY(0);
+}
