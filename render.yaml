@@ -1,0 +1,37 @@
+services:
+  # Backend Spring Boot
+  - type: web
+    name: quizapp-backend
+    env: java
+    region: frankfurt
+    plan: free
+    buildCommand: cd backend && mvn clean package -DskipTests
+    startCommand: cd backend && java -Dserver.port=$PORT -jar target/quizapp-1.0.0.jar
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: JAVA_TOOL_OPTIONS
+        value: -Xmx512m
+
+  # Frontend React
+  - type: web
+    name: quizapp-frontend
+    env: static
+    region: frankfurt
+    plan: free
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        sync: false
+
+databases:
+  - name: quizapp-db
+    databaseName: quizapp
+    user: quizapp_user
+    region: frankfurt
+    plan: free
